@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.game.virusattack" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Virus Attack</name>
+    <description>
+        A 2-D Arcade game where Player is bound to fight the Viruses flowing randomly in order to infect the Player.
+    </description>
+    <author email="kshvsharma980@gmail.com" href="">
+        KSHV
+    </author>
+    <icon src="res/logo.png" />
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="orientation" value="landscape" />
+    <preference name="Fullscreen" value="true" />
+</widget>

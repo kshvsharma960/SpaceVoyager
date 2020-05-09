@@ -1,0 +1,1 @@
+{"plugins":["cordova-plugin-whitelist","cordova-plugin-admob-free","cordova-promise-polyfill","cordova-admob-sdk"]}

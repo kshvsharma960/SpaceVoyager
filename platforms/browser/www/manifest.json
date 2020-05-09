@@ -1,0 +1,18 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Virus Attack",
+  "short_name": "Virus Attack",
+  "version": "io.game.virusattack",
+  "description": "A 2-D Arcade game where Player is bound to fight the Viruses flowing randomly in order to infect the Player.",
+  "author": "KSHV",
+  "icons": [
+    {
+      "src": "res/logo.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "orientation": "landscape",
+  "start_url": "index.html"
+}
