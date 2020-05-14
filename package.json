@@ -26,7 +26,7 @@
     "plugins": {
       "cordova-plugin-whitelist": {},
       "cordova-plugin-admob-free": {
-        "ADMOB_APP_ID": "ca-app-pub-8614117558939586~1489487828"
+        "ADMOB_APP_ID": "ca-app-pub-8614117558939586~6569190586"
       }
     },
     "platforms": [

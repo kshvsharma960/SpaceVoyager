@@ -17,7 +17,7 @@
        under the License.
  */
 
-package io.game.virusattack;
+package io.game.spacevoyager;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

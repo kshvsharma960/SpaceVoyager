@@ -16,8 +16,43 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+function ShowBannerAd(){
+    admob.banner.show();
+}
 
-var app = {
+function HideBannerAd(){
+    admob.banner.hide();
+}
+
+function ShowInterrestialAd(){
+    admob.interstitial.show();
+}
+
+function HideInterrestialAd(){
+    //admob.interstitial.hide();
+}
+
+ function InitializeAdmob(){
+        admob.banner.config({
+            id: 'ca-app-pub-8614117558939586/9969186020',
+            isTesting:false,
+            autoShow:true
+        });
+        
+
+           // Create banner 
+           admob.banner.prepare();
+
+           admob.interstitial.config({
+            id: 'ca-app-pub-8614117558939586/6029941017',
+            isTesting:false,
+            autoShow:false
+           });
+           
+           admob.interstitial.prepare();         
+        }
+
+ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -53,6 +88,7 @@ var app = {
             }
           }
       },false);
+      InitializeAdmob();
     },
 
     // Update DOM on a Received Event

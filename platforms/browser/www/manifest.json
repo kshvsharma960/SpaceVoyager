@@ -1,10 +1,10 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "Virus Attack",
-  "short_name": "Virus Attack",
-  "version": "io.game.virusattack",
-  "description": "A 2-D Arcade game where Player is bound to fight the Viruses flowing randomly in order to infect the Player.",
+  "name": "Space Voyager",
+  "short_name": "Space Voyager",
+  "version": "io.game.spacevoyager",
+  "description": "A 2-D Arcade game where Player is bound to fight the aliens in the intersteller Voyage in deep space.",
   "author": "KSHV",
   "icons": [
     {

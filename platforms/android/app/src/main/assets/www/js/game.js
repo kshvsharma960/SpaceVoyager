@@ -1011,6 +1011,11 @@ $.setState = function( state ) {
 	// handle clean up between states
 	$.buttons.length = 0;
 
+	if(state != 'play'){
+		
+		ShowBannerAd();
+	}
+
 	if( state == 'menu' ) {
 		$.mouse.down = 0;		
 		$.mouse.ax = 0;
@@ -1176,7 +1181,7 @@ $.setupStates = function() {
 			ctx: $.ctxmg,
 			x: $.cw / 2,
 			y: $.ch / 2 - 90,
-			text: 'VIRUS ATTACK',
+			text: 'SPACE VOYAGER',
 			hspacing: 2,
 			vspacing: 1,
 			halign: 'center',
@@ -1196,7 +1201,7 @@ $.setupStates = function() {
 			ctx: $.ctxmg,
 			x: $.cw / 2,
 			y: $.ch - 60,
-			text: 'LETS FIGHT THE VIRUS TOGETHER',
+			text: 'LETS FIGHT IT',
 			hspacing: 1,
 			vspacing: 1,
 			halign: 'center',
@@ -1297,6 +1302,8 @@ $.setupStates = function() {
 	};
 	
 	$.states['play'] = function() {
+		HideBannerAd();
+		HideInterrestialAd();
 		$.updateDelta();
 		$.updateScreen();
 		$.updateLevel();
@@ -1340,6 +1347,7 @@ $.setupStates = function() {
 				$.gameoverTick += $.dt;				
 			} else {
 				$.setState( 'gameover' );
+				ShowInterrestialAd();
 			}
 
 			if( !$.gameoverExplosion ) {
@@ -1435,7 +1443,7 @@ $.setupStates = function() {
 			ctx: $.ctxmg,
 			x: $.cw / 2,
 			y: 100,
-			text: 'INFECTED',
+			text: 'CRASHED',
 			hspacing: 3,
 			vspacing: 1,
 			halign: 'center',

@@ -1011,6 +1011,11 @@ $.setState = function( state ) {
 	// handle clean up between states
 	$.buttons.length = 0;
 
+	if(state != 'play'){
+		
+		ShowBannerAd();
+	}
+
 	if( state == 'menu' ) {
 		$.mouse.down = 0;		
 		$.mouse.ax = 0;
@@ -1297,6 +1302,8 @@ $.setupStates = function() {
 	};
 	
 	$.states['play'] = function() {
+		HideBannerAd();
+		HideInterrestialAd();
 		$.updateDelta();
 		$.updateScreen();
 		$.updateLevel();
@@ -1340,6 +1347,7 @@ $.setupStates = function() {
 				$.gameoverTick += $.dt;				
 			} else {
 				$.setState( 'gameover' );
+				ShowInterrestialAd();
 			}
 
 			if( !$.gameoverExplosion ) {

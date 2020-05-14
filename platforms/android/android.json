@@ -27,7 +27,7 @@
               "count": 1
             },
             {
-              "xml": "<meta-data android:name=\"com.google.android.gms.ads.APPLICATION_ID\" android:value=\"ca-app-pub-8614117558939586~1489487828\" />",
+              "xml": "<meta-data android:name=\"com.google.android.gms.ads.APPLICATION_ID\" android:value=\"ca-app-pub-8614117558939586~6569190586\" />",
               "count": 1
             }
           ],
@@ -50,16 +50,16 @@
       "PACKAGE_NAME": "io.cordova.hellocordova"
     },
     "cordova-promise-polyfill": {
-      "PACKAGE_NAME": "io.game.virusattack"
+      "PACKAGE_NAME": "io.game.spacevoyager"
     },
     "cordova-admob-sdk": {
       "PLAY_SERVICES_VERSION": "11.0.4",
-      "PACKAGE_NAME": "io.game.virusattack"
+      "PACKAGE_NAME": "io.game.spacevoyager"
     },
     "cordova-plugin-admob-free": {
-      "ADMOB_APP_ID": "ca-app-pub-8614117558939586~1489487828",
+      "ADMOB_APP_ID": "ca-app-pub-8614117558939586~6569190586",
       "PLAY_SERVICES_VERSION": "11.0.4",
-      "PACKAGE_NAME": "io.game.virusattack"
+      "PACKAGE_NAME": "io.game.spacevoyager"
     }
   },
   "dependent_plugins": {},

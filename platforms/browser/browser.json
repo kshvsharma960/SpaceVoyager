@@ -11,13 +11,13 @@
       "PACKAGE_NAME": "io.cordova.hellocordova"
     },
     "cordova-promise-polyfill": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+      "PACKAGE_NAME": "io.game.spacevoyager"
     },
     "cordova-admob-sdk": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+      "PACKAGE_NAME": "io.game.spacevoyager"
     },
     "cordova-plugin-admob-free": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+      "PACKAGE_NAME": "io.game.spacevoyager"
     }
   },
   "dependent_plugins": {},

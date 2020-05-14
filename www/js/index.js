@@ -16,27 +16,68 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+function ShowBannerAd(){
+    admob.banner.show({
+        id: admobid.banner,
+        isTesting: false,
+        autoShow: true
+    });
+}
+
+function HideBannerAd(){
+    admob.banner.hide();
+}
+
+function ShowInterrestialAd(){
+    admob.interstitial.show();
+}
+
+function HideInterrestialAd(){
+    //admob.interstitial.hide();
+}
+
+var admobid = {};
+ admobid = {
+    banner: 'ca-app-pub-8614117558939586/9969186020',
+    interstitial: 'ca-app-pub-3940256099942544/1033173712'
+  }
 
  function InitializeAdmob(){
-       /* admob.banner.config({
-            id: 'ca-app-pub-8614117558939586/6474700129',//'ca-app-pub-8614117558939586~1489487828',
-           });
-*/
-           // Create banner
-           admob.banner.prepare();
+/*
+    admob.banner.config({
+        id: admobid.banner,
+        isTesting: false,
+        autoShow: true,
+      })
+      */
+      admob.banner.prepare();
+    
+      admob.interstitial.config({
+        id: admobid.interstitial,
+        isTesting: false,
+        autoShow: false,
+      });
+      admob.interstitial.prepare();
 
-           // Show the banner
-           admob.banner.show({
-               id: 'ca-app-pub-8614117558939586/6474700129',
-               autoShow:true
-           });
-   
-           // Hide the banner
-           //admob.banner.hide()
-   
-           // Remove the banner
-           //admob.banner.remove()
- }
+      document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
+        console.log(event)
+      })
+      
+      document.addEventListener('admob.interstitial.events.LOAD_FAIL', function(event) {
+        console.log(event)
+      })
+      
+      document.addEventListener('admob.interstitial.events.LOAD', function(event) {
+        console.log(event)
+        
+      })
+      
+      document.addEventListener('admob.interstitial.events.CLOSE', function(event) {
+        console.log(event)
+      
+        admob.interstitial.prepare()
+      });
+   }
 
  var app = {
     // Application Constructor
